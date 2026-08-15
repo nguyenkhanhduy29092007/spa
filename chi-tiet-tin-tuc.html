@@ -40,7 +40,10 @@
             <!-- Sửa đường dẫn logo tương đối + onerror dự phòng -->
             <img
               src="images/logo.jpg"
-              onerror="this.onerror=null; this.src='./images/logo.jpg';"
+              onerror="
+                this.onerror = null;
+                this.src = './images/logo.jpg';
+              "
               alt="SPA H&D Logo"
               class="h-12 w-12 rounded-full object-cover border-2 border-[#d9822b]"
             />
@@ -241,14 +244,14 @@
           category: "Dưỡng Sinh",
           date: "10/08/2026",
           author: "SPA H&D",
-          img: "https://images.unsplash.com/photo-1540555700478-4be289fbecef?q=80&w=800",
+          img: "https://classpass-res.cloudinary.com/image/upload/f_auto/q_auto/sodiksl9r1wpuq7qv579.jpg",
           content: `
             <p class="font-semibold text-base text-[#4a2810]">Đau mỏi vai gáy là căn bệnh cố hữu của dân văn phòng do ngồi sai tư thế và ít vận động trong thời gian dài.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">1. Nguyên nhân gây xơ cứng cơ vai gáy</h3>
             <p>Việc ngồi làm việc liên tục 8 tiếng trước máy tính làm co thắt mạch máu, cản trở lưu thông máu lên não, gây ra các cơn đau nhức ê ẩm vùng cổ và thắt lưng.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Liệu pháp đả thông kinh lạc tại SPA H&D</h3>
             <p>Sử dụng kỹ thuật ấn huyệt chuyên sâu kết hợp thảo mộc tự nhiên giúp làm mềm các bó cơ, tăng cường tuần hoàn máu và mang lại cảm giác nhẹ nhõm ngay sau buổi điều trị đầu tiên.</p>
-          `
+          `,
         },
         "ngam-chan": {
           title: "Lợi Ích Của Việc Ngâm Chân Thảo Dược Mỗi Tối",
@@ -262,7 +265,7 @@
             <p>Nước ấm kết hợp với gừng, sả, muối khoáng kích thích các dây thần kinh, giúp thư giãn hệ thần kinh trung ương và mang lại giấc ngủ sâu hơn.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Tăng cường lưu thông khí huyết</h3>
             <p>Nhiệt độ nước giúp co giãn mạch máu, giảm áp lực cho tim và xua tan cảm giác lạnh tay chân vào mùa đông.</p>
-          `
+          `,
         },
         "lay-nhan-mun": {
           title: "Tại Sao Nên Lấy Nhân Mụn Chuẩn Y Khoa Tại Spa?",
@@ -276,7 +279,7 @@
             <p>Kỹ thuật viên tại SPA H&D dùng dụng cụ vô trùng riêng biệt cho từng khách hàng, loại bỏ sạch nhân mụn ẩn mà không làm rách mô da.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Phục hồi da với đèn Bio-Light</h3>
             <p>Sau khi lấy nhân mụn, làn da được chiếu ánh sáng sinh học giúp kháng viêm, diệt khuẩn và gom cồi mụn hiệu quả.</p>
-          `
+          `,
         },
         "massage-da-nong": {
           title: "Tác Dụng Tuyệt Mời Của Massage Đá Nóng Thạch Anh",
@@ -290,7 +293,7 @@
             <p>Nhiệt năng từ đá thạch anh tự nhiên thẩm thấu sâu vào cơ bắp, hỗ trợ mở lỗ chân lông và đẩy độc tố ra ngoài theo tuyến mồ hôi.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Giảm căng thẳng thần kinh</h3>
             <p>Những chuyển động trượt đẩy nhẹ nhàng của đá nóng trên cơ thể giúp giải phóng hormone endorphin, mang lại sự thư thái tối đa.</p>
-          `
+          `,
         },
         "dien-di-c": {
           title: "Bí Quyết Phục Hồi Da Sạm Nắng Bằng Điện Di Vitamin C",
@@ -304,7 +307,7 @@
             <p>Công nghệ điện di ion lạnh giúp dưỡng chất Vitamin C đi sâu vào tầng trung bì của da thay vì chỉ dừng lại ở bề mặt như thoa kem thông thường.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Ức chế hắc tố Melanin</h3>
             <p>Vitamin C thẩm thấu sâu giúp làm mờ đốm nâu, hạn chế hình thành tàn nhang và kích thích sản sinh collagen tự nhiên.</p>
-          `
+          `,
         },
         "tay-te-bao-chet": {
           title: "Hướng Dẫn Tẩy Tế Bào Chết Và Chà Gót Chân Tại Nhà",
@@ -318,7 +321,7 @@
             <p>Thực hiện ngâm chân bằng nước ấm 10 phút, sau đó dùng muối khoáng xoa nhẹ nhàng để loại bỏ lớp da sừng già cỗi.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Dưỡng ẩm khoá dưỡng chất</h3>
             <p>Sau khi chà gót, hãy thoa ngay kem dưỡng chuyên dụng hoặc dầu dừa rồi đeo tất để giữ độ ẩm cho đôi chân suốt đêm.</p>
-          `
+          `,
         },
         "goi-dau-thao-moc": {
           title: "Gội Đầu Dưỡng Sinh Thảo Mộc - Giải Pháp Cho Tóc Khơ Xơ",
@@ -332,8 +335,8 @@
             <p>Tinh chất saponin trong bồ kết giúp làm sạch sâu gàu ngứa mà không làm mất đi độ ẩm tự nhiên của da đầu.</p>
             <h3 class="text-lg font-bold text-[#4a2810] mt-6">2. Thư giãn cùng hương thơm tự nhiên</h3>
             <p>Hương thơm thanh nhẹ từ hương nhu và tinh dầu bưởi giúp xua tan căng thẳng tâm lý sau giờ làm việc.</p>
-          `
-        }
+          `,
+        },
       };
 
       const urlParams = new URLSearchParams(window.location.search);
@@ -346,8 +349,7 @@
         currentArticle.title;
       document.getElementById("article-category").innerText =
         currentArticle.category;
-      document.getElementById("article-title").innerText =
-        currentArticle.title;
+      document.getElementById("article-title").innerText = currentArticle.title;
       document.getElementById("article-meta").innerText =
         `Ngày đăng: ${currentArticle.date} | Tác giả: ${currentArticle.author}`;
       document.getElementById("article-image").src = currentArticle.img;
